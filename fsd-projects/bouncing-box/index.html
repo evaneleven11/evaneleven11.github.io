@@ -79,7 +79,7 @@
          * If the box drifts off the screen, turn it around!
          */
         function update() {
-          if (position > boardWidth) speed = speed * -1;
+          if (positionX > boardWidth) speed = speed * -1;
           if (positionX < 0) speed *= -1;
           positionX = positionX + speed;
           moveBoxTo(positionX);
